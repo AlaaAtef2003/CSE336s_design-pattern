@@ -1,7 +1,7 @@
 package patternProject_2100482;
 import java.util.ArrayList;
 import java.util.List;
-class TextWidgetConverter extends TextConverter {
+class TextWidgetConverter implements TextConverter {
     private List<String> widgetData = new ArrayList<>();
 
     @Override
@@ -24,3 +24,5 @@ class TextWidgetConverter extends TextConverter {
         System.out.println();
     }
 }
+
+

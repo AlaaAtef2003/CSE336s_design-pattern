@@ -1,6 +1,6 @@
 package patternProject_2100482;
 
-public class ASCIIConverter extends TextConverter  {
+public class ASCIIConverter implements TextConverter  {
 	 private StringBuilder asciiText = new StringBuilder();
 
 	    @Override
@@ -10,7 +10,7 @@ public class ASCIIConverter extends TextConverter  {
 
 	    @Override
 	    public void convertFontChange(String font) {
-	        asciiText.append("[ ACSII Font: ").append(font).append("]");
+	        asciiText.append("[ACSII Font: ").append(font).append("]");
 	    }
 
 	    @Override
@@ -22,3 +22,6 @@ public class ASCIIConverter extends TextConverter  {
 	        return asciiText.toString();
 	    }
 }
+
+
+

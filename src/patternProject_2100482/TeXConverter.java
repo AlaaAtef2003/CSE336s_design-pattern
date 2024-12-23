@@ -1,6 +1,6 @@
 package patternProject_2100482;
 
-public class TeXConverter extends TextConverter {
+public class TeXConverter implements  TextConverter {
 	private StringBuilder texText = new StringBuilder();
 
     @Override
@@ -10,7 +10,7 @@ public class TeXConverter extends TextConverter {
 
     @Override
     public void convertFontChange(String font) {
-        texText.append(" [ TeXfont :").append(font).append("]");
+        texText.append("[TeXfont :").append(font).append("]");
     }
 
     @Override
