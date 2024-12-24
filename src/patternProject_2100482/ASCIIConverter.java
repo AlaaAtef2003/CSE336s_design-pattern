@@ -10,7 +10,7 @@ public class ASCIIConverter implements TextConverter  {
 
 	    @Override
 	    public void convertFontChange(String font) {
-	        asciiText.append("[ACSII Font: ").append(font).append("]");
+	    	// ASCII doesn't support font changes
 	    }
 
 	    @Override
