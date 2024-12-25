@@ -23,6 +23,12 @@ class TextWidgetConverter implements TextConverter {
         widgetData.forEach(data -> System.out.print(data + " "));
         System.out.println();
     }
+    public String getTextWidget() {
+        StringBuilder result = new StringBuilder();
+        widgetData.forEach(data -> result.append(data).append(" "));
+        return result.toString().trim();
+    }
+    
 }
 
 
